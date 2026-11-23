@@ -1,0 +1,39 @@
+{
+  "label": "post-registration coupling-switch and directed-repair study",
+  "scope": "same integer CLOB and full local gate; existing frozen sources and results remain unchanged",
+  "couplings": ["shared", "world_separated"],
+  "coupling_intervention": "only side/quantity world scopes change from shared to baseline-only/policy-only; family and parameters unchanged; policy-only branch roles unchanged",
+  "recipe_version": 2,
+  "primary_sessions": "all 32 original design sessions",
+  "primary_replicates": 4,
+  "primary_epochs": 4,
+  "replicate_sweep": {"session_rule": "batch equals zero, all four workload cells", "counts": [4, 8, 16, 32], "epochs": 4},
+  "horizon_sweep": {"session_rule": "six agents, batch zero or one, both book regimes", "counts": [4, 16, 32], "replicates": 4},
+  "worker_plan": {"worker_count": 2, "assignment": "round_robin"},
+  "parent_parallelism": 2,
+  "thresholds": "exact slot/key/plan equality; lexicographic ties; zero regret retained; no fitted numerical tolerance",
+  "seed_rule": "unchanged: commitment([original seed_root, session_id, replicate]); full RunSpec determines event namespace",
+  "panel_cases": ["clean", "coupling_switch_target", "missing_slot", "duplicate_slot"],
+  "target_candidate": "original outcome-independent session target",
+  "target_replicate": "sha256(session id + mechanism-slot) modulo panel replicate count",
+  "collectors": ["comparison_contract", "conventional_relational", "without_coupling", "spec_grouped", "minus_slot_coverage", "local_full_only"],
+  "primary_metrics": ["local_pass", "marginal_schema_match", "unauthorized_release", "top1_flip", "finite_panel_regret", "within_session_sample_contrast_variance"],
+  "decision_rule": "unchanged exact mean paired notional, descending with lexicographic ties",
+  "repair_study": {
+    "input": "all 256 retained mixed panels, unchanged",
+    "oracle": "semantic recipe/plan catalog from sealed original attempt schedule; no diagnostic/key-hash output used as truth",
+    "observable_truth": "final residual slot obligations, not all historical injected operations",
+    "methods": ["slot_directed_batch", "slot_directed_serial", "whole_panel_refresh"],
+    "store": "complete original revised store, initial plan permitted; object recovery is measured separately from new execution",
+    "metrics": ["exact_diagnosis", "slot_precision", "slot_recall", "repair_release", "object_transfers", "round_trips", "request_response_bytes", "new_pairs"],
+    "new_simulation_pairs": 0
+  },
+  "auxiliary_analysis": {
+    "normalized_regret": "absolute finite-panel regret / max(1, max absolute reference candidate mean); descriptive, does not replace absolute regret",
+    "timing": "all 32 existing complete fresh/reuse paired times; per-cell IQR, paired differences, slower session; no invented retroactive phase clocks or break-even threshold"
+  },
+  "reference_types": "full fresh within new coupling panels; prior replicate extension remains partially shared",
+  "failure_policy": "write-once attempts; retain failures, local rejection, zero effects and undefined ratios; no retries or replacement seeds",
+  "expected_claims": "comparison authorization and outcome-independent directed repair under explicit trusted semantics; no new cache/join primitive, no universal speedup or human-team claim",
+  "exclusions": ["second simulator", "real market data", "LLM agents", "cross-platform reproduction", "external independent implementation"]
+}

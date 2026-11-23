@@ -1,0 +1,11 @@
+{
+  "created_at_utc": "2026-10-25T08:03:03.755439+00:00",
+  "authority": "local pre-probe seal; exploratory and not blind",
+  "members": {
+    "scripts/cscwd2027_revision2/residual_probe.py": "30d2ab6d97fe2186bcc6f435246385cc3452f0b0ac9f790d8128fb0308f217ea",
+    "configs/cscwd2027/revision2/residual_probe_config.json": "fd301b3adfb1b1bed4ec9870fa275f61c7db232ac5c68fdc0b3b9e4387477577",
+    "src/policytwin/coordination_validation/witnesses.py": "79f9311a72644eb64bc3d446cda6de8372c455279bb8e281d4ddf3d52c34d046",
+    "src/policytwin/coordination_validation/gate.py": "ea912c11eb114c0d0b59aaf83981ea3e1d027fd312b45a29a4c323548195ca7e"
+  },
+  "parent_freeze_sha256": "d1b708ab46e019d0e0f80f491dc2c3024edeb2d05fe9b4ddfbb2878877528b60"
+}

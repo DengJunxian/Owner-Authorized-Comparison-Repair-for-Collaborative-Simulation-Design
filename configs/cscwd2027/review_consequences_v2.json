@@ -1,0 +1,29 @@
+{
+  "label": "post-registration second-review robustness and descriptive reanalysis",
+  "scope": "same simulator and original 32 sessions; original results remain immutable",
+  "original_reanalysis": "retain all original report denominators; add conditional flips among assessable unauthorized releases, positive-regret median/max, and exact gap quartiles as post-hoc descriptive endpoints",
+  "mixed_handoffs": {
+    "seed": "cscwd-mixed-panel-review-20261026-v1",
+    "panels_per_session": 8,
+    "operation_count": "uniform integer 0 through 3",
+    "operations": ["foreign_session", "stale_revision", "missing_slot", "duplicate_slot", "label_substitution", "unpermitted_plan"],
+    "probabilities": "uniform independent operation sampling with replacement; order retained",
+    "authority": "revised contract, initial worker plan only; unpermitted remap uses an unchanged candidate"
+  },
+  "localization": "exact slot-and-reason sets against pre-execution original single-operation witnesses; mixed-composition diagnostics retained without circular accuracy scoring",
+  "workflow": {
+    "sessions": "all 32, in declared order",
+    "order": "sha256(session id + review-e2e-order) parity",
+    "fresh": "execute 12 revised pairs with full local receipt/replay gate, read back verified evidence, check/write panel",
+    "reuse": "read/verify 8 unchanged original objects, replay each again into new reports, execute 4 unsupported pairs with the full gate, check/write panel",
+    "timing_boundary": "starts before evidence loading and execution; ends after panel decision/numerical file write; old store construction excluded from both revision paths",
+    "new_pairs": 512,
+    "add_candidate": "separately validate an eight-slot two-candidate starting contract extended to the third supported candidate using the same timed new objects; no extra simulation or independent sample claimed",
+    "double_replicates": "extend revised recipes from replicates 0..3 to 0..7; execute 12 new pairs per session; compare reused old half against independently fresh timed old slots, with new half shared by both constructed panels",
+    "extension_new_pairs": 384,
+    "maximum_new_pairs": 896,
+    "failure_policy": "retain every failure and rejected artifact; no retry or seed replacement"
+  },
+  "gap_strata": "exact quartile cuts from the complete intended reference panels of each analysis universe; no incoming outcome used to choose cuts",
+  "interpretation": "descriptive designed-case stress validation and one-host workflow timing; no operational fault-rate, human-user or population-optimal selection inference"
+}

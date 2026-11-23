@@ -1,0 +1,21 @@
+{
+  "label": "post-registration reviewer-requested artifact-level validation",
+  "parent": "configs/cscwd2027/design_contract_v1",
+  "sampling": "all 32 existing design sessions; no new simulation or seed",
+  "permission_negative": "retain only the initial plan in D; replace replicate zero of each candidate with its existing locally valid remap object",
+  "permission_control": "the identical panel with both original plans permitted",
+  "ablation": "remove only comparison-level plan permission, retaining local validity, exact slot coverage and scientific-key binding",
+  "gap_analysis": "initial and fresh revised panels; exact largest minus second-largest candidate mean, retaining ties",
+  "revision_footprints": "analytical consequences of the implemented monolithic key, not new trajectory experiments",
+  "timing": {
+    "warmup_batches": 3,
+    "batches": 101,
+    "boundary": "decide on all initial panels with cached verified tokens; excludes store verification, replay and file I/O",
+    "modes": ["comparison_contract", "conventional_relational"]
+  },
+  "expected_claims": [
+    "comparison-level permission is a distinct obligation even for locally valid, scientifically identical evidence",
+    "case counts validate declared obligations and do not estimate operational fault prevalence",
+    "revision savings depend on the declared invalidation footprint"
+  ]
+}
